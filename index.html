@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+
+  <title>mellim.io</title>
+
+  <!--CSS stylesheets-->
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/css/styles.css">
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Dosis:wght@300&family=Neucha&display=swap" rel="stylesheet">
+
+  <!-- Deferred JS scripts -->
+  <script src="resources/javascript/config.js" defer></script>
+  <script src="resources/javascript/enlarge-reduce.js" defer></script>
+  <script src="resources/javascript/responsive-subgrid.js" defer></script>
+
+</head>
+<body>
+
+  <!-- The main is the part of the website that is visible upon loading --> 
+  <main id="portfolio-main">
+    
+    <!-- Container of text, introducing myself -->
+    <div id="intro-container">
+      <h1>Hello, I'm Mel.</h1>
+      <p>I'm a web developer; this is my portfolio. I invite you to click around and take a look at my work.</p>
+      <p>I'm quite new to this, so my projects are all works-in-progress. Come back periodically to check out my improvements or new projects.</p>
+      <p>If you'd like to work with me, or just want to say "Hello back!", please do get in touch. I'd be so pleased to hear from you.</p>
+      
+      <!-- Get in touch button -->
+      <a href="contact-me.html" class="button-link" id="contact-me-link"><button id="get-in-touch-button">Get in touch</button></a>
+
+      <!-- Social media buttons -->
+      <div id="buttons-container">
+        <a href="https://github.com/mel-lim" class="button-link" id="github-link"><button class="social-media-icon" id="github-icon"></button></a>
+        <a href="https://www.linkedin.com/in/mel-lim-11269b1aa/" class="button-link" id="linkedin-link"><button class="social-media-icon" id="linkedin-icon"></button></a>
+        </div>
+      
+    </div>
+
+    <!-- Large profile photo container -->
+    <div id="profile-photo-container">
+      <img src="resources/images/profile-photo-straight.jpeg" alt="mel lim" class="embedded-media" />
+    </div>
+
+  </main>
+
+  <!-- These are the 'zoomed-in' version of the small grid items that the user sees when the user clicks on the smaller items -->
+
+  <!-- The polar bear javascript game -->
+  <div id="javascript-game-container-large" class="container-large">
+    <video autoplay muted loop="true" alt="javascript game demo" id="javascript-game-video-large" class="pre-grow">
+      <source src="resources/videos/javascript-game-demo-v2.mp4" type="video/mp4">
+      <img src="resources/images/javascript-game-thumbnail.png" alt="video not supported, javascript game thumbnail" />
+    </video>
+
+    <div class="circle-shape large-view-circle">
+      
+      <div class="project-label">
+        <p>Polar bear javascript game</p>
+      </div>
+
+      <a href="https://mel-lim.github.io/polar-bear-game/" target="_blank" rel="noopener noreferrer" class="button-link"><button id="go-to-game" class="go-to-external">Try it out</button></a>
+
+    </div>
+  </div>
+
+  <!-- The listmaker app -->
+  <div id="listmaker-app-container-large" class="container-large">
+    <video autoplay muted loop="true" alt="listmaker web app demo" id="listmaker-app-video-large" class="pre-grow">
+      <source src="resources/videos/listmaker-demo.mp4" type="video/mp4">
+      <img src="resources/images/interactive-listmaker-thumbnail.png" alt="video not supported, listmaker web app thumbnail">
+    </video>
+    <div class="circle-shape large-view-circle">
+
+      <div class="project-label">
+        <p>Listmaker web app</p>
+      </div>
+
+      <a href="https://mel-lim.github.io/adventure-website/plan-adventure.html" target="_blank" rel="noopener noreferrer" class="button-link"><button id="go-to-listmaker" class="go-to-external">Try it out</button></a>
+
+    </div>
+  </div>
+
+  <!-- The interactive website -->
+  <div id="interactive-website-container-large" class="container-large">
+    <video autoplay muted loop="true" alt="interactive website demo" id="interactive-website-video-large" class="pre-grow">
+      <source src="resources/videos/interactive-website-demo.mp4" type="video/mp4">
+      <img src="resources/images/interactive-website-thumbnail.png" alt="video not supported, interactive website thumbnail">
+    </video>
+
+    <div class="circle-shape large-view-circle">
+
+      <div class="project-label">
+        <p>Interactive website</p>
+      </div>
+
+      <a href="https://mel-lim.github.io/adventure-website/" target="_blank" rel="noopener noreferrer" class="button-link"><button id="go-to-interactive-website" class="go-to-external">Try it out</button></a>
+
+    </div>
+  </div>
+
+  <!-- The responsive website -->
+  <div id="responsive-website-container-large" class="container-large">
+    <img src="resources/images/thumbnail-responsive-webpage.png" alt="responsive website demo" id="responsive-website-image-large" class="pre-grow" />
+
+    <div class="circle-shape large-view-circle">
+      
+      <div class="project-label">
+        <p>Multi-page, responsive website</p>
+      </div>
+
+      <a href="https://mel-lim.github.io/adventure-website/" target="_blank" rel="noopener noreferrer" class="button-link"><button class="go-to-external">Try it out</button></a>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>copyleft mellim.io</p>
+  </footer>
+  
+</body>
+</html>
