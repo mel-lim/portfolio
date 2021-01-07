@@ -54,7 +54,9 @@ header a {
 /* General styles */
 
 body {
-  background-color: hsl(210, 14%, 19%)    
+  background-color: hsl(210, 14%, 19%);  
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
@@ -73,12 +75,18 @@ header a {
   text-decoration: none;
 }
 
+footer {
+  color: #B3BFBC;
+  padding: 0;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
 /* Main grid items layout and appearance */
 
 #portfolio-main {
-  margin: 50px auto;
+  margin: 40px auto 20px auto;
   max-width: 700px;
-  max-height: 700px;
   display: grid;
   grid-template-columns: [col-start] 1fr [col-space] 1fr [col-end];
   grid-template-rows: [row-start] 1fr [row-space] 1fr [row-end];
@@ -349,13 +357,6 @@ header a {
   border: solid 1px hsl(203, 3%, 20%);
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  color: #B3BFBC;
-  margin-bottom: 15px;
-}
-
 /* Contact page */
 #contact-page-main {
   text-align: center;
@@ -519,7 +520,7 @@ input[type=submit]:hover {
   }
 
   #portfolio-main {
-    margin: 50px 15px;
+    margin: 40px 15px 20px 15px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-areas:
@@ -557,7 +558,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 480px) {
   #portfolio-main {
-    margin: 50px 15px;
+    margin: 40px 15px 15px 15px;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
